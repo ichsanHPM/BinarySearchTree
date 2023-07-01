@@ -2,6 +2,15 @@
 #include <string>
 using namespace std;
 
+class node {
+public:
+    string info;
+    Node* lefchild;
+    Node* righchild;
+
+    //constructor for the node class
+
+};
 
 int main()
 {
