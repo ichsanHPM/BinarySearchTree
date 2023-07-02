@@ -57,6 +57,14 @@ public:
         //this function searches the curentNode of the specifield Node as well as the curent node of its parent
         curentNode = ROOT;
         parent = NULL;
+        while ((curentNode != NULL) && (curentNode->info != element))
+        {
+            parent = curentNode;
+            if (element < curentNode->info)
+                curentNode = curentNode->leftchild;
+            else
+                curentNode = curentNode->rightchild;
+        }
     }
 
 };
