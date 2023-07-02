@@ -52,6 +52,13 @@ public:
         }
     }
 
+    void search(string element, Node*& parent, Node*& curentNode)
+    {
+        //this function searches the curentNode of the specifield Node as well as the curent node of its parent
+        curentNode = ROOT;
+        parent = NULL;
+    }
+
 };
 
 int main()
